@@ -21,7 +21,7 @@
   },
   "require": {
     "php": "^8.2",
-    "phpstan/phpstan": "^1.12.6 || ^2.0"
+    "phpstan/phpstan": "^2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^10.1 || ^11.0 || ^12.0",
@@ -35,7 +35,7 @@
     "classmap": ["tests/fixtures"]
   },
   "scripts": {
-    "phpstan": "vendor/bin/phpstan --ansi analyse --configuration phpstan.neon",
+    "ecs": "vendor/bin/ecs",
     "test": "vendor/bin/phpunit --colors=always"
   },
   "config": {
