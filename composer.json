@@ -1,0 +1,46 @@
+{
+  "name": "pmarki/phpstan-rules",
+  "type": "phpstan-extension",
+  "description": "Set of additional PHPStan rules",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Piotr Markiewicz",
+      "email": "email@markiewicz.xyz"
+    }
+  ],
+  "keywords": [
+    "static analysis"
+  ],
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "phpstan/phpstan": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.1 || ^11.0 || ^12.0",
+    "symplify/easy-coding-standard": "^12.5"
+  },
+  "autoload": {
+    "psr-4": {"PMarki\\PHPStanRules\\": "src"}
+  },
+  "autoload-dev": {
+    "psr-4": {"PMarki\\PHPStanRules\\Tests\\": "tests"},
+    "classmap": ["tests/fixtures"]
+  },
+  "scripts": {
+    "ecs": "vendor/bin/ecs --fix",
+    "test": "vendor/bin/phpunit --colors=always"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
