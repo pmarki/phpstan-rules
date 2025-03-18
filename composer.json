@@ -35,7 +35,7 @@
     "classmap": ["tests/fixtures"]
   },
   "scripts": {
-    "ecs": "vendor/bin/ecs",
+    "ecs": "vendor/bin/ecs --fix",
     "test": "vendor/bin/phpunit --colors=always"
   },
   "config": {

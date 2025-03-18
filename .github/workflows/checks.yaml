@@ -24,7 +24,7 @@ jobs:
 
       -
         name: Check formatting
-        run: composer ecs
+        run: vendor/bin/ecs
 
   tests:
     runs-on: ubuntu-latest
