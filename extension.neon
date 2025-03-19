@@ -1,0 +1,13 @@
+services:
+	-
+	    class: PMarki\PHPStanRules\Rules\ConstRule
+	    tags:
+	        - phpstan.rules.rule
+	-
+	    class: PMarki\PHPStanRules\Rules\ProtectedMethodRule
+	    tags:
+	        - phpstan.rules.rule
+	-
+	    class: PMarki\PHPStanRules\Rules\ProtectedPropertyRule
+	    tags:
+	        - phpstan.rules.rule
