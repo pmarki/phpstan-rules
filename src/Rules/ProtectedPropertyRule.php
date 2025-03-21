@@ -6,8 +6,8 @@ namespace PMarki\PHPStanRules\Rules;
 
 use PhpParser\Node;
 use PhpParser\Node\Stmt\Property;
-use PHPStan\Node\ClassPropertyNode;
 use PHPStan\Analyser\Scope;
+use PHPStan\Node\ClassPropertyNode;
 use PHPStan\Rules\Rule;
 use PHPStan\Rules\RuleErrorBuilder;
 
