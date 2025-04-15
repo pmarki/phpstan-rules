@@ -11,3 +11,11 @@ services:
 	    class: PMarki\PHPStanRules\Rules\ProtectedPropertyRule
 	    tags:
 	        - phpstan.rules.rule
+	-
+	    class: PMarki\PHPStanRules\Rules\DuplicatedArrayKeys
+	    tags:
+	        - phpstan.rules.rule
+	-
+	    class: PMarki\PHPStanRules\Rules\BooleanArgumentFlagRule
+	    tags:
+	        - phpstan.rules.rule
