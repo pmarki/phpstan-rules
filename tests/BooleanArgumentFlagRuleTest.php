@@ -35,11 +35,11 @@ class BooleanArgumentFlagRuleTest extends RuleTestCase
                 ],
                 [
                     "Boolean flag '\$bool' indicates violation of Single Responsibility Principle." . self::TIP,
-                    28,
+                    19
                 ],
                 [
                     "Boolean flag '\$bool' indicates violation of Single Responsibility Principle." . self::TIP,
-                    41,
+                    32,
                 ],
             ],
         );
