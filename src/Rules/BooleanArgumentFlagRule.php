@@ -18,8 +18,8 @@ use PMarki\PHPStanRules\Utils\Ancestors;
 class BooleanArgumentFlagRule implements Rule
 {
     public function __construct(
-        private readonly Ancestors $ancestors,
         private readonly FileTypeMapper $fileTypeMapper,
+        private readonly Ancestors $ancestors,
     ) {
     }
 
