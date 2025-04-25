@@ -1,30 +1,32 @@
 services:
-	-
-	    class: PMarki\PHPStanRules\Rules\ConstRule
-	    tags:
-	        - phpstan.rules.rule
-	-
-	    class: PMarki\PHPStanRules\Rules\ProtectedMethodRule
-	    tags:
-	        - phpstan.rules.rule
-	-
-	    class: PMarki\PHPStanRules\Rules\ProtectedPropertyRule
-	    tags:
-	        - phpstan.rules.rule
-	-
-	    class: PMarki\PHPStanRules\Rules\DuplicatedArrayKeys
-	    tags:
-	        - phpstan.rules.rule
-	-
-	    class: PMarki\PHPStanRules\Rules\BooleanArgumentFlagRule
-	    tags:
-	        - phpstan.rules.rule
-	-
-	    class: PMarki\PHPStanRules\Rules\ExcessiveParameterListRule
-	    arguments:
-	        maxNumberOfParameters: %pmarki.excessiveParameterListRule.maxNumberOfParameters%
-	    tags:
-	        - phpstan.rules.rule
+    ancestors:
+        class: PMarki\PHPStanRules\Utils\Ancestors
+    -
+     	class: PMarki\PHPStanRules\Rules\ConstRule
+     	tags:
+     	    - phpstan.rules.rule
+    -
+        class: PMarki\PHPStanRules\Rules\ProtectedMethodRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: PMarki\PHPStanRules\Rules\ProtectedPropertyRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: PMarki\PHPStanRules\Rules\DuplicatedArrayKeys
+        tags:
+            - phpstan.rules.rule
+    -
+        class: PMarki\PHPStanRules\Rules\BooleanArgumentFlagRule
+        tags:
+            - phpstan.rules.rule
+    -
+        class: PMarki\PHPStanRules\Rules\ExcessiveParameterListRule
+        arguments:
+            maxNumberOfParameters: %pmarki.excessiveParameterListRule.maxNumberOfParameters%
+        tags:
+            - phpstan.rules.rule
 
 parameters:
     pmarki:
@@ -37,4 +39,3 @@ parametersSchema:
             maxNumberOfParameters: int(),
         ])
     ])
-
