@@ -8,7 +8,7 @@ Set of additional PHPStan rules
 
 *PHPMD rules*
 - check for boolean argument flag
-- more coming soon ...
+- maximum number of parameters (default 10)
 
 ## Installation
 
@@ -19,4 +19,12 @@ Edit your phpstan configuration file and add
 ```
 includes:
     - vendor/pmarki/phpstan-rules/extension.neon
+```
+
+Additional configuration:
+```
+parameters:
+    pmarki:
+        excessiveParameterListRule:
+            maxNumberOfParameters: 10
 ```
